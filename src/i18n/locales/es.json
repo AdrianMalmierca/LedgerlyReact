@@ -1,0 +1,77 @@
+{
+  "login": {
+    "title": "Ledgerly",
+    "subtitle": "Controla tus gastos fácilmente",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "button": "Iniciar sesión",
+    "no_account": "¿No tienes cuenta?",
+    "signup_link": "Regístrate"
+  },
+  "signup": {
+    "title": "Crear cuenta",
+    "subtitle": "Empieza a controlar tus gastos",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirm_password": "Confirmar contraseña",
+    "button": "Registrarse"
+  },
+  "expenses": {
+    "title": "Ledgerly",
+    "search_placeholder": "Buscar gastos...",
+    "add_button": "Añadir",
+    "sync_button": "Sincronizar",
+    "empty": "No hay gastos todavía",
+    "delete": "Eliminar"
+  },
+  "add_expense": {
+    "title": "Nuevo gasto",
+    "section_details": "Detalles",
+    "field_title": "Título",
+    "field_amount": "Importe",
+    "section_category": "Categoría",
+    "save": "Guardar",
+    "close": "Cerrar"
+  },
+  "detail": {
+    "total_amount": "Importe total",
+    "date": "Fecha",
+    "category": "Categoría"
+  },
+  "chart": {
+    "title": "Gráfico",
+    "no_data": "No hay datos para mostrar",
+    "native_title": "Gráfico nativo"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "notifications": "Recordatorio diario",
+    "biometrics": "Face ID / Huella dactilar",
+    "sign_out": "Cerrar sesión",
+    "delete_account": "Eliminar cuenta",
+    "delete_account_title": "Eliminar cuenta",
+    "delete_account_message": "Esta acción es irreversible. Se eliminarán todos tus gastos.",
+    "delete_account_confirm": "Eliminar",
+    "cancel": "Cancelar"
+  },
+  "categories": {
+    "Food": "Comida",
+    "Transport": "Transporte",
+    "Bills": "Facturas",
+    "Other": "Otros"
+  },
+  "errors": {
+    "passwords_no_match": "Las contraseñas no coinciden"
+  },
+  "notifications": {
+    "title": "Ledgerly",
+    "enabled": "Notificaciones activadas ✓"
+  },
+  "currency": {
+    "title": "Tipos de cambio",
+    "loading": "Cargando tipos...",
+    "error": "No se pudieron cargar los tipos",
+    "converted": "Importe convertido"
+  }
+}

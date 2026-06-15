@@ -1,0 +1,77 @@
+{
+  "login": {
+    "title": "Ledgerly",
+    "subtitle": "Track your expenses simply",
+    "email": "Email",
+    "password": "Password",
+    "button": "Sign In",
+    "no_account": "Don't have an account?",
+    "signup_link": "Sign Up"
+  },
+  "signup": {
+    "title": "Create Account",
+    "subtitle": "Start tracking your expenses",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "button": "Sign Up"
+  },
+  "expenses": {
+    "title": "Ledgerly",
+    "search_placeholder": "Search expenses...",
+    "add_button": "Add",
+    "sync_button": "Sync",
+    "empty": "No expenses yet",
+    "delete": "Delete"
+  },
+  "add_expense": {
+    "title": "New Expense",
+    "section_details": "Details",
+    "field_title": "Title",
+    "field_amount": "Amount",
+    "section_category": "Category",
+    "save": "Save",
+    "close": "Close"
+  },
+  "detail": {
+    "total_amount": "Total amount",
+    "date": "Date",
+    "category": "Category"
+  },
+  "chart": {
+    "title": "Chart",
+    "no_data": "No data to display",
+    "native_title": "Native Chart"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "notifications": "Daily Reminder",
+    "biometrics": "Face ID / Fingerprint",
+    "sign_out": "Sign Out",
+    "delete_account": "Delete Account",
+    "delete_account_title": "Delete Account",
+    "delete_account_message": "This action is irreversible. All your expenses will be deleted.",
+    "delete_account_confirm": "Delete",
+    "cancel": "Cancel"
+  },
+  "categories": {
+    "Food": "Food",
+    "Transport": "Transport",
+    "Bills": "Bills",
+    "Other": "Other"
+  },
+  "errors": {
+    "passwords_no_match": "The passwords don't match"
+  },
+  "notifications": {
+    "title": "Ledgerly",
+    "enabled": "Notifications enabled ✓"
+  },
+  "currency": {
+    "title": "Exchange Rates",
+    "loading": "Loading rates...",
+    "error": "Could not load rates",
+    "converted": "Converted amount"
+  }
+}

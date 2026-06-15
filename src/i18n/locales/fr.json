@@ -1,0 +1,77 @@
+{
+  "login": {
+    "title": "Ledgerly",
+    "subtitle": "Suivez vos dépenses simplement",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "button": "Se connecter",
+    "no_account": "Pas encore de compte ?",
+    "signup_link": "S'inscrire"
+  },
+  "signup": {
+    "title": "Créer un compte",
+    "subtitle": "Commencez à suivre vos dépenses",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "confirm_password": "Confirmer le mot de passe",
+    "button": "S'inscrire"
+  },
+  "expenses": {
+    "title": "Ledgerly",
+    "search_placeholder": "Rechercher des dépenses...",
+    "add_button": "Ajouter",
+    "sync_button": "Synchroniser",
+    "empty": "Aucune dépense pour l'instant",
+    "delete": "Supprimer"
+  },
+  "add_expense": {
+    "title": "Nouvelle dépense",
+    "section_details": "Détails",
+    "field_title": "Titre",
+    "field_amount": "Montant",
+    "section_category": "Catégorie",
+    "save": "Enregistrer",
+    "close": "Fermer"
+  },
+  "detail": {
+    "total_amount": "Montant total",
+    "date": "Date",
+    "category": "Catégorie"
+  },
+  "chart": {
+    "title": "Graphique",
+    "no_data": "Aucune donnée à afficher",
+    "native_title": "Graphique natif"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "notifications": "Rappel quotidien",
+    "biometrics": "Face ID / Empreinte digitale",
+    "sign_out": "Se déconnecter",
+    "delete_account": "Supprimer le compte",
+    "delete_account_title": "Supprimer le compte",
+    "delete_account_message": "Cette action est irréversible. Toutes vos dépenses seront supprimées.",
+    "delete_account_confirm": "Supprimer",
+    "cancel": "Annuler"
+  },
+  "categories": {
+    "Food": "Alimentation",
+    "Transport": "Transport",
+    "Bills": "Factures",
+    "Other": "Autres"
+  },
+  "errors": {
+    "passwords_no_match": "Les mots de passe ne correspondent pas"
+  },
+  "notifications": {
+    "title": "Ledgerly",
+    "enabled": "Notifications activées ✓"
+  },
+  "currency": {
+    "title": "Taux de change",
+    "loading": "Chargement...",
+    "error": "Impossible de charger les taux",
+    "converted": "Montant converti"
+  }
+}

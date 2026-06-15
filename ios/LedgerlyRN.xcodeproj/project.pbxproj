@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-LedgerlyRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-LedgerlyRN.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		164E0957EECEAB5B632A42EE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8347DCDF2FDFDC99009C44F4 /* DeviceInfoModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8347DCDE2FDFDC99009C44F4 /* DeviceInfoModule.m */; };
+		8347DCE22FDFE799009C44F4 /* ExpenseChartViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8347DCE12FDFE799009C44F4 /* ExpenseChartViewManager.m */; };
+		8347DCE52FDFE7BB009C44F4 /* ExpenseChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8347DCE42FDFE7BB009C44F4 /* ExpenseChartView.m */; };
+		8347DCE82FDFF857009C44F4 /* CategoryBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8347DCE72FDFF857009C44F4 /* CategoryBadgeView.m */; };
+		8347DCEB2FDFF874009C44F4 /* CategoryBadgeViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8347DCEA2FDFF874009C44F4 /* CategoryBadgeViewManager.m */; };
+		835727872FDF36C40037AAAE /* NotificationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 835727862FDF36C40037AAAE /* NotificationModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,19 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-LedgerlyRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LedgerlyRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = LedgerlyRN/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LedgerlyRN/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8347DCDD2FDFDC8A009C44F4 /* DeviceInfoModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfoModule.h; sourceTree = "<group>"; };
+		8347DCDE2FDFDC99009C44F4 /* DeviceInfoModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoModule.m; sourceTree = "<group>"; };
+		8347DCE02FDFE78B009C44F4 /* ExpenseChartViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpenseChartViewManager.h; sourceTree = "<group>"; };
+		8347DCE12FDFE799009C44F4 /* ExpenseChartViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpenseChartViewManager.m; sourceTree = "<group>"; };
+		8347DCE32FDFE7AB009C44F4 /* ExpenseChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpenseChartView.h; sourceTree = "<group>"; };
+		8347DCE42FDFE7BB009C44F4 /* ExpenseChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpenseChartView.m; sourceTree = "<group>"; };
+		8347DCE62FDFF848009C44F4 /* CategoryBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryBadgeView.h; sourceTree = "<group>"; };
+		8347DCE72FDFF857009C44F4 /* CategoryBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryBadgeView.m; sourceTree = "<group>"; };
+		8347DCE92FDFF866009C44F4 /* CategoryBadgeViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryBadgeViewManager.h; sourceTree = "<group>"; };
+		8347DCEA2FDFF874009C44F4 /* CategoryBadgeViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryBadgeViewManager.m; sourceTree = "<group>"; };
+		835727852FDF36AE0037AAAE /* NotificationModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationModule.h; sourceTree = "<group>"; };
+		835727862FDF36C40037AAAE /* NotificationModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationModule.m; sourceTree = "<group>"; };
+		835727882FDF36DE0037AAAE /* LedgerlyRN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LedgerlyRN-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -69,11 +89,24 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				8347DCEA2FDFF874009C44F4 /* CategoryBadgeViewManager.m */,
+				8347DCE92FDFF866009C44F4 /* CategoryBadgeViewManager.h */,
+				8347DCE72FDFF857009C44F4 /* CategoryBadgeView.m */,
+				8347DCE62FDFF848009C44F4 /* CategoryBadgeView.h */,
+				8347DCE42FDFE7BB009C44F4 /* ExpenseChartView.m */,
+				8347DCE32FDFE7AB009C44F4 /* ExpenseChartView.h */,
+				8347DCE12FDFE799009C44F4 /* ExpenseChartViewManager.m */,
+				8347DCE02FDFE78B009C44F4 /* ExpenseChartViewManager.h */,
+				8347DCDE2FDFDC99009C44F4 /* DeviceInfoModule.m */,
+				8347DCDD2FDFDC8A009C44F4 /* DeviceInfoModule.h */,
+				835727862FDF36C40037AAAE /* NotificationModule.m */,
+				835727852FDF36AE0037AAAE /* NotificationModule.h */,
 				13B07FAE1A68108700A75B9A /* LedgerlyRN */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				835727882FDF36DE0037AAAE /* LedgerlyRN-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -130,7 +163,7 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 2650;
 					};
 				};
 			};
@@ -159,6 +192,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				164E0957EECEAB5B632A42EE /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,9 +223,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LedgerlyRN/Pods-LedgerlyRN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LedgerlyRN/Pods-LedgerlyRN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -228,9 +266,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LedgerlyRN/Pods-LedgerlyRN-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LedgerlyRN/Pods-LedgerlyRN-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -244,7 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8347DCE22FDFE799009C44F4 /* ExpenseChartViewManager.m in Sources */,
+				835727872FDF36C40037AAAE /* NotificationModule.m in Sources */,
+				8347DCEB2FDFF874009C44F4 /* CategoryBadgeViewManager.m in Sources */,
+				8347DCE82FDFF857009C44F4 /* CategoryBadgeView.m in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+				8347DCDF2FDFDC99009C44F4 /* DeviceInfoModule.m in Sources */,
+				8347DCE52FDFE7BB009C44F4 /* ExpenseChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LedgerlyRN;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_OBJC_BRIDGING_HEADER = "LedgerlyRN-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LedgerlyRN;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_OBJC_BRIDGING_HEADER = "LedgerlyRN-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -370,6 +420,10 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
+				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -377,8 +431,13 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -435,6 +494,10 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
+				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -442,8 +505,12 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
