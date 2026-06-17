@@ -2,3 +2,4 @@
 
 @interface CategoryBadgeViewManager : RCTViewManager
 @end
+

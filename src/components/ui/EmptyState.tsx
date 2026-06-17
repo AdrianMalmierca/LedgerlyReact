@@ -25,3 +25,4 @@ const styles = StyleSheet.create({
     color: '#8E8E93',
   },
 });
+

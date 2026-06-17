@@ -5,11 +5,14 @@
 
 RCT_EXPORT_MODULE()
 
++ (BOOL)requiresMainQueueSetup {
+  return NO;
+}
+
 RCT_EXPORT_METHOD(getDeviceName:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
-  dispatch_async(dispatch_get_main_queue(), ^{ //on the main thread because UIDevice is from UIKit so a lot of
-  //APIs from UIKit should be called on the main thread
+  dispatch_async(dispatch_get_main_queue(), ^{
     NSString *name = [[UIDevice currentDevice] name];
     resolve(name);
   });
@@ -30,3 +33,5 @@ RCT_EXPORT_METHOD(getAppVersion:(RCTPromiseResolveBlock)resolve
 }
 
 @end
+
+

@@ -14,7 +14,9 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useTranslation } from 'react-i18next';
 import Animated, {
   useSharedValue,
-  useAnimatedStyle
+  useAnimatedStyle,
+  withSequence,
+  withSpring,
 } from 'react-native-reanimated';
 import { useAuthStore } from '../store/authStore';
 import { useExpenseStore } from '../store/expenseStore';
@@ -58,6 +60,11 @@ export default function AddExpenseScreen({ navigation }: Props) {
       category,
       userId: user.uid,
     };
+
+      scale.value = withSequence(
+        withSpring(1.15, { damping: 4, stiffness: 200 }),
+        withSpring(1, { damping: 6, stiffness: 200 })
+      );
 
     try {
       await insertExpense(newExpense);

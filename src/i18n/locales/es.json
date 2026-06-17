@@ -22,7 +22,8 @@
     "add_button": "Añadir",
     "sync_button": "Sincronizar",
     "empty": "No hay gastos todavía",
-    "delete": "Eliminar"
+    "delete": "Eliminar",
+    "not_found": "Gasto no encontrado"
   },
   "add_expense": {
     "title": "Nuevo gasto",
@@ -72,6 +73,13 @@
     "title": "Tipos de cambio",
     "loading": "Cargando tipos...",
     "error": "No se pudieron cargar los tipos",
-    "converted": "Importe convertido"
+    "converted": "Importe convertido",
+    "error_fetching": "Error al obtener los tipos de cambio"
+  },
+  "auth": {
+    "no_account": "No existe cuenta con ese email. Regístrate primero.",
+    "passwords_no_match": "Las contraseñas no coinciden",
+    "wrong_password": "Contraseña incorrecta",
+    "email_already_exists": "Ya existe una cuenta con este correo electrónico"
   }
 }

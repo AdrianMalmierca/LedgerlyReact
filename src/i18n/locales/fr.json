@@ -53,7 +53,8 @@
     "delete_account_title": "Supprimer le compte",
     "delete_account_message": "Cette action est irréversible. Toutes vos dépenses seront supprimées.",
     "delete_account_confirm": "Supprimer",
-    "cancel": "Annuler"
+    "cancel": "Annuler",
+    "not_found": "Dépense introuvable"
   },
   "categories": {
     "Food": "Alimentation",
@@ -72,6 +73,13 @@
     "title": "Taux de change",
     "loading": "Chargement...",
     "error": "Impossible de charger les taux",
-    "converted": "Montant converti"
+    "converted": "Montant converti",
+    "error_fetching": "Erreur lors de la récupération des taux de change"
+  },
+  "auth": {
+    "no_account": "Aucun compte trouvé. Veuillez vous inscrire d'abord.",
+    "passwords_no_match": "Les mots de passe ne correspondent pas",
+    "wrong_password": "Mot de passe incorrect",
+    "email_already_exists": "Un compte avec cet e-mail existe déjà"
   }
 }

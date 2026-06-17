@@ -6,8 +6,7 @@ import {
   FlatList,
   TouchableOpacity,
   StyleSheet,
-  Alert,
-  ActivityIndicator,
+  Alert
 } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useTranslation } from 'react-i18next';
@@ -231,34 +230,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: 80,
-  },
-  row: {
-    backgroundColor: '#fff',
-    borderRadius: 12,
-    padding: 16,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginTop: 8,
-  },
-  rowLeft: {
-    flex: 1,
-    marginRight: 12,
-  },
-  rowTitle: {
-    fontSize: 16,
-    fontWeight: '500',
-    color: '#000',
-  },
-  rowCategory: {
-    fontSize: 13,
-    color: '#8E8E93',
-    marginTop: 2,
-  },
-  rowAmount: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#FF3B30',
   },
   separator: {
     height: 0,

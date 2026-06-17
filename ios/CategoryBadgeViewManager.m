@@ -13,3 +13,4 @@ RCT_EXPORT_VIEW_PROPERTY(category, NSString)
 RCT_EXPORT_VIEW_PROPERTY(badgeColor, NSString)
 
 @end
+

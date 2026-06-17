@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import i18n from '../i18n';
 
 interface AuthState {
   user: { uid: string; email: string } | null;
@@ -24,12 +25,12 @@ export const useAuthStore = create<AuthState>((set) => ({
     set({ isLoading: true, errorMessage: null });
     const stored = await AsyncStorage.getItem(`user_${email}`);
     if (!stored) {
-      set({ errorMessage: 'No existe cuenta con ese email. Regístrate primero.', isLoading: false });
+      set({ errorMessage: i18n.t('auth.no_account'), isLoading: false });
       return;
     }
     const { passwordHash } = JSON.parse(stored);
     if (passwordHash !== password) {
-      set({ errorMessage: 'Contraseña incorrecta', isLoading: false });
+      set({ errorMessage: i18n.t('auth.wrong_password'), isLoading: false });
       return;
     }
     set({ user: { uid: email, email }, isLoading: false });
@@ -37,10 +38,17 @@ export const useAuthStore = create<AuthState>((set) => ({
 
   signUp: async (email, password, confirmPassword) => {
     if (password !== confirmPassword) {
-      set({ errorMessage: 'Las contraseñas no coinciden' });
+      set({ errorMessage: i18n.t('auth.passwords_no_match') });
       return;
     }
     set({ isLoading: true, errorMessage: null });
+    
+    const existing = await AsyncStorage.getItem(`user_${email}`);
+    if (existing) {
+      set({ errorMessage: i18n.t('auth.email_already_exists'), isLoading: false });
+      return;
+    }
+
     await AsyncStorage.setItem(`user_${email}`, JSON.stringify({ passwordHash: password }));
     set({ user: { uid: email, email }, isLoading: false });
   },

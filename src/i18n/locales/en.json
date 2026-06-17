@@ -22,7 +22,8 @@
     "add_button": "Add",
     "sync_button": "Sync",
     "empty": "No expenses yet",
-    "delete": "Delete"
+    "delete": "Delete",
+    "not_found": "Expense not found"
   },
   "add_expense": {
     "title": "New Expense",
@@ -72,6 +73,13 @@
     "title": "Exchange Rates",
     "loading": "Loading rates...",
     "error": "Could not load rates",
-    "converted": "Converted amount"
+    "converted": "Converted amount",
+    "error_fetching": "Error fetching exchange rates"
+  },
+  "auth": {
+    "no_account": "No account found. Please sign up first.",
+    "passwords_no_match": "Passwords do not match",
+    "wrong_password": "Incorrect password",
+    "email_already_exists": "An account with this email already exists"
   }
 }

@@ -5,6 +5,10 @@
 
 RCT_EXPORT_MODULE()
 
++ (BOOL)requiresMainQueueSetup {
+  return NO;
+}
+
 RCT_EXPORT_METHOD(getDeviceName:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
@@ -29,3 +33,5 @@ RCT_EXPORT_METHOD(getAppVersion:(RCTPromiseResolveBlock)resolve
 }
 
 @end
+
+

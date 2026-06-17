@@ -2,3 +2,5 @@
 
 @interface DeviceInfoModule : NSObject <RCTBridgeModule>
 @end
+
+

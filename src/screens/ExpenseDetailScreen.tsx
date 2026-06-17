@@ -40,7 +40,6 @@ export default function ExpenseDetailScreen({ route }: Props) {
       .finally(() => setRatesLoading(false));
   }, []);
 
-  // Buscamos el gasto en el store por id — no necesitamos pasarlo entero por navegación
   const expense = useExpenseStore((state) =>
     state.expenses.find((e) => e.id === expenseId)
   );
@@ -48,7 +47,7 @@ export default function ExpenseDetailScreen({ route }: Props) {
   if (!expense) {
     return (
       <View style={styles.notFound}>
-        <Text style={styles.notFoundText}>Expense not found</Text>
+        <Text style={styles.notFoundText}>{t('expenses.not_found')}</Text>
       </View>
     );
   }
@@ -64,7 +63,7 @@ export default function ExpenseDetailScreen({ route }: Props) {
   return (
     <ScrollView style={styles.container} bounces={false}>
 
-      {/*Pink banner with total amount*/}
+      {/*Purple banner with total amount*/}
       <View style={styles.banner}>
         <Text style={styles.bannerLabel}>{t('detail.total_amount')}</Text>
         <View style={styles.amountRow}>
@@ -80,7 +79,7 @@ export default function ExpenseDetailScreen({ route }: Props) {
         <View style={styles.cardHeader}>
           <Text style={styles.cardTitle}>{expense.title}</Text>
           <CategoryBadgeView
-            category={expense.category}
+            category={t(`categories.${expense.category}`)}
             badgeColor={CATEGORY_COLORS[expense.category] ?? '#8E8E93'}
             style={{ height: 28, width: 100, marginTop: 4 }}
           />
@@ -144,7 +143,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F2F2F7',
   },
   banner: {
-    backgroundColor: '#FF2D55',
+    backgroundColor: '#6f2dff',
     paddingTop: 40,
     paddingBottom: 48,
     alignItems: 'center',
@@ -189,15 +188,6 @@ const styles = StyleSheet.create({
     color: '#000',
     flex: 1,
     marginRight: 8,
-  },
-  badge: {
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 20,
-  },
-  badgeText: {
-    fontSize: 12,
-    fontWeight: '500',
   },
   divider: {
     height: StyleSheet.hairlineWidth,
