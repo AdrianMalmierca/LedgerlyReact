@@ -78,24 +78,6 @@ export default function ExpenseListScreen({ navigation }: Props) {
     );
   };
 
-  //Delete account
-  const handleDeleteAccount = async () => {
-    if (!user) return;
-    Alert.alert(
-      t('settings.delete_account_title'),
-      t('settings.delete_account_message'),
-      [
-        { text: t('settings.cancel'), style: 'cancel' },
-        {
-          text: t('settings.delete_account_confirm'),
-          style: 'destructive',
-          onPress: async () => {
-            await deleteAllExpensesForUser(user.uid);
-          },
-        },
-      ]
-    );
-  };
 
   //Each row in the FlatList
   const renderItem = ({ item }: { item: Expense }) => (
@@ -119,14 +101,6 @@ export default function ExpenseListScreen({ navigation }: Props) {
             style={styles.headerButton}
           >
             <Text style={styles.headerButtonText}>＋</Text>
-          </TouchableOpacity>
-          {/*Logout*/}
-          <TouchableOpacity onPress={signOut} style={styles.headerButton}>
-            <Text style={styles.headerButtonText}>⎋</Text>
-          </TouchableOpacity>
-          {/* Delete Account */}
-          <TouchableOpacity onPress={handleDeleteAccount} style={styles.headerButton}>
-            <Text style={[styles.headerButtonText, { color: '#FF3B30' }]}>✕</Text>
           </TouchableOpacity>
         </View>
       </View>

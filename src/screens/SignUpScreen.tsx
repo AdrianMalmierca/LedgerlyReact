@@ -14,6 +14,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../store/authStore';
 import { AuthStackParamList } from '../navigation/AppNavigator';
+import { useFocusEffect } from '@react-navigation/native';
 
 type Props = NativeStackScreenProps<AuthStackParamList, 'SignUp'>;
 
@@ -25,9 +26,11 @@ export default function SignUpScreen({ navigation }: Props) {
   const [password, setPassword] = React.useState('');
   const [confirmPassword, setConfirmPassword] = React.useState('');
 
-  useEffect(() => {
-    clearError();
-  }, [clearError]);
+  useFocusEffect(
+    React.useCallback(() => {
+      clearError();
+    }, [clearError])
+  );
 
   const isDisabled =
     email.trim() === '' ||

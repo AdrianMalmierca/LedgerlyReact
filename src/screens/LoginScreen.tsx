@@ -14,6 +14,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../store/authStore';
 import { AuthStackParamList } from '../navigation/AppNavigator';
+import { useFocusEffect } from '@react-navigation/native';
 
 type Props = NativeStackScreenProps<AuthStackParamList, 'Login'>;
 
@@ -26,9 +27,11 @@ export default function LoginScreen({ navigation }: Props) {
 
   //Clear error message when the component mounts or when the user navigates to this screen, to dont show the error
   //al the time
-  useEffect(() => {
-    clearError();
-  }, [clearError]);
+  useFocusEffect(
+    React.useCallback(() => {
+      clearError();
+    }, [clearError])
+  );
 
   const isDisabled = email.trim() === '' || password.trim() === '' || isLoading;
 
