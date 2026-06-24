@@ -22,48 +22,60 @@ A personal expense tracker built with React Native, running natively on both iOS
 
 Simulated authentication, with per-user account storage and validation against existing accounts.
 
+Android:
 <img src="assets/loginandroid.png" alt="Login" width="300"/>
 
+iOS:
 <img src="assets/logninios.png" alt="Login" width="300"/>
 
 ### Expense List
 
 Search, filter by category, and swipe through all your registered expenses.
 
+Android:
 <img src="assets/listandroid.png" alt="Expense List" width="300"/>
 
+iOS:
 <img src="assets/Listios.png" alt="Expense List" width="300"/>
 
 ### Expense Detail
 
 Full detail view with a native category badge and live currency conversion (USD / GBP / JPY).
 
+Android:
 <img src="assets/detailandroid.png" alt="Expense Detail" width="300"/>
 
+iOS:
 <img src="assets/Detailios.png" alt="Expense Detail" width="300"/>
 
 ### Add Expense
 
 Modal form with category picker and a spring-based save animation.
 
+Android:
 <img src="assets/addandroid.png" alt="Add Expense" width="300"/>
 
+iOS:
 <img src="assets/addios.png" alt="Add Expense" width="300"/>
 
 ### Chart
 
 Category breakdown with an animated bar chart (JS) alongside a fully native bar chart view (iOS/Android).
 
+Android:
 <img src="assets/chartandroid.png" alt="Chart" width="300"/>
 
+iOS:
 <img src="assets/chartios.png" alt="Chart" width="300"/>
 
 ### Settings
 
 Language switcher, notification toggle (native module), and live device info pulled from native code.
 
+Android:
 <img src="assets/settingsandroid.png" alt="Settings" width="300"/>
 
+iOS:
 <img src="assets/settingsios.png" alt="Settings" width="300"/>
 
 ---
