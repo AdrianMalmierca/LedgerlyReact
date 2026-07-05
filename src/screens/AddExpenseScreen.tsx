@@ -61,10 +61,10 @@ export default function AddExpenseScreen({ navigation }: Props) {
       userId: user.uid,
     };
 
-      scale.value = withSequence(
-        withSpring(1.15, { damping: 4, stiffness: 200 }),
-        withSpring(1, { damping: 6, stiffness: 200 })
-      );
+    scale.value = withSequence(
+      withSpring(1.15, { damping: 4, stiffness: 200 }),
+      withSpring(1, { damping: 6, stiffness: 200 })
+    );
 
     try {
       await insertExpense(newExpense);

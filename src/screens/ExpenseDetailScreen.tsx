@@ -22,7 +22,6 @@ const CATEGORY_COLORS: Record<string, string> = {
   Other: '#8E8E93',
 };
 
-
 export default function ExpenseDetailScreen({ route }: Props) {
   const { t } = useTranslation();
   const { expenseId } = route.params;

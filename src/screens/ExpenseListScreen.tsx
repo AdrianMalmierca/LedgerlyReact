@@ -19,7 +19,6 @@ import {
   fetchExpenses,
   deleteExpenseById,
 } from '../services/SQLiteService';
-import { deleteAllExpensesForUser } from '../services/SQLiteService';
 import ExpenseRow from '../components/ui/ExpensesRow';
 import CategoryChip from '../components/ui/CategoryChip';
 import EmptyState from '../components/ui/EmptyState';

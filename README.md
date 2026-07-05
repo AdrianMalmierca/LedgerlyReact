@@ -293,7 +293,7 @@ Zustand was chosen for global state (auth session, expense list and filters) bec
 
 ### SQLite + AsyncStorage instead of Firebase
 
-The project initially integrated Firebase (Auth + Firestore) for authentication and remote sync. It was removed after repeated, unresolvable iOS build failures (`FirebaseAuth-Swift.h` not found, conflicts with the new architecture flags used by Reanimated) and because the assignment only requires local persistence, not cross-device sync. SQLite now handles all expense data, filtered per user by email; AsyncStorage simulates a minimal account system without any backend.
+The project initially integrated Firebase (Auth + Firestore) for authentication and remote sync. It was removed after repeated, unresolvable iOS build failures (`FirebaseAuth-Swift.h` not found, conflicts with the new architecture flags used by Reanimated). SQLite now handles all expense data, filtered per user by email; AsyncStorage simulates a minimal account system without any backend.
 
 ### Decoupling animation from navigation
 
@@ -301,7 +301,7 @@ Triggering navigation (`navigation.goBack()`) directly inside a Reanimated `runO
 
 ### Native views over JS-only charts
 
-Rather than relying solely on a JavaScript-rendered bar chart, `ExpenseChartView` draws its bars directly with Core Graphics (iOS) and Canvas (Android), fed via a `data` prop bridged from JS. This was done specifically to satisfy and demonstrate the native-view requirement, alongside the JS/Reanimated chart that remains the primary, animated chart experience.
+Rather than relying solely on a TypeScript-rendered bar chart, `ExpenseChartView` draws its bars directly with Core Graphics (iOS) and Canvas (Android), fed via a `data` prop bridged from TS.
 
 ---
 
@@ -328,17 +328,13 @@ Rather than relying solely on a JavaScript-rendered bar chart, `ExpenseChartView
 
 ## What I Learned Building This
 
-### React Native Native Modules, Old vs New Architecture
-
-Implementing `DeviceInfoModule` as a true TurboModule on iOS requires Codegen to generate the C++ `Spec` classes beforehand — attempting to implement `RCTTurboModule` manually without that step fails with errors like `use of undeclared identifier 'facebook'`. This taught me the practical difference between _declaring_ new-architecture compatibility (via `TurboModuleRegistry` on the JS side) and _fully implementing_ a TurboModule, and when it's reasonable to stop at the former for a given project's scope.
-
 ### Firebase Is Not Always the Right Default
 
 Firebase felt like the obvious choice for authentication at the start of the project, but its SDK's compatibility with the exact Xcode/iOS Simulator versions in use turned out to be fragile enough to block the build entirely. Removing it in favor of SQLite + AsyncStorage was a reminder that "local-first" is often the more robust choice when cross-device sync isn't an actual requirement.
 
 ### Reanimated and `runOnJS` Have Sharp Edges
 
-Mixing `async` JavaScript logic with `runOnJS` callbacks fired from the UI thread led to silent navigation failures that had nothing to do with the navigation library itself. Keeping animations and asynchronous side effects (SQLite writes, navigation) in clearly separate code paths solved it — and is now a rule I apply by default when combining Reanimated with async logic.
+Mixing `async` TypeScript logic with `runOnJS` callbacks fired from the UI thread led to silent navigation failures that had nothing to do with the navigation library itself. Keeping animations and asynchronous side effects (SQLite writes, navigation) in clearly separate code paths solved it — and is now a rule I apply by default when combining Reanimated with async logic.
 
 ### `react-native-gesture-handler` API Instability Across Versions
 

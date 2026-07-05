@@ -5,7 +5,8 @@
 
 RCT_EXPORT_MODULE()
 
-+ (BOOL)requiresMainQueueSetup {
++ (BOOL)requiresMainQueueSetup { // This module does not require main queue setup, 
+// because it does not access any UIKit components directly
   return NO;
 }
 
